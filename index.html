@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3D Website layout</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- locomotive css -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.css">
+</head>
+<body>
+    <div id="nav">
+        <h2><b>CYBER</b>CODEX*</h2>
+        <button> Enhance Yourself </button>
+    </div>
+    <!-- this div tag help us to wrap our four pages -->
+    <div id="main">
+        <div id="page">
+            <div id="loop">
+                <h1><b>REALITY</b> IS <span>HACKED</span> <i>FUTURE IS</i> <span>NOW</span></i></h1>
+                <h1><b>REALITY</b> IS <span>HACKED</span> <i>FUTURE IS</i> <span>NOW</span></i></h1>
+                <h1><b>REALITY</b> IS <span>HACKED</span> <i>FUTURE IS</i> <span>NOW</span></i></h1>
+            </div>
+            <h3>Fiction is the veil behind which truth hides,<br> woven from fragments of reality and imagination. Cyber fiction,<br> however, breaches the frontier of known science, crafting a world <br>where today’s discoveries birth tomorrow’s uncharted realms of <br>possibility.</h3>
+            <h4>"Fictio est velum, sub quo veritas latet, ex fragmentis realitatis et imaginationis <br> contextum. Cyber fictio autem limites scientiae notae violat, mundum fingens ubi <br> inventiones hodiernae cras regiones ignotas possibilitatis pariunt."</h4>
+            <h5>SCROLL TO READ MORE</h5>
+            <!-- camnvas make the page to pin  -->
+            <canvas></canvas>
+        </div>
+
+        <div id="page1">
+            <div id="right-text">
+                <h3>CYBERFICTION/KEYWORD</h3>
+                <h1><b>HAVE FUN
+                    <br>
+                    LETS PLAY
+                    <br>
+                    JUST BE FOCUSED</b>
+                </h1>
+            </div>
+            <div id="left-text">
+                <h1>MAKE A LIFE
+                    <br>
+                    TAKE A RISK
+                    <br>
+                    BE THE CHANGE</h1>
+                    <h3>...AND MAINTAIN YOUR SANITY</h3>
+            </div>
+        </div>
+        <div id="page2">
+            <div id="text1">
+                <h3>CYBERFICTION / HAVE FUN</h3>
+                <h1>LET'S
+                    <br>
+                    SOME FUN 
+                    <br>
+                    TOGETHER!
+                </h1>
+            </div>      
+            <div id="text2">
+                <p id="p1">"Let us not cage our emotions within the limits of control, but <br> release them like a storm, unrestrained by borders or material <br> desires. Let the beast within rise, raw and untamed, a volcanic <br> eruption of pure feeling—raging, roaring, and unfettered by <br> consciousness, for it is in this wild freedom that we truly <br>embrace the essence of our inner selves."</p>
+            
+                <p id="p2">"우리의 감정을 통제의 한계에 가두지 말고, 경계나 물질적 욕망에 얽매이지 않은 폭풍처럼 그것을 해방시키자. 내면의 야수를 일으켜 날것 그대로의 상태로, 억제되지 않은 감정의 화산 폭발처럼 분출하라—내면의 분노가 의식에서 해방된 채로 울부짖고, 포효하리니, 진정한 자유 속에서 우리 자신을 완전히 마주하게 될 것이다."</p>
+            </div>
+        </div>
+
+        <div id="page3">
+            <div class="image-container">
+                <!-- <img src="golden_eyes-removebg-preview.png" alt="Image description"> -->
+            </div>
+            <div id="text3">
+                <h3>CYBERSPACE / PLAYGROUND</h3>
+                <h1 id="ak">CYBERFIELD</h1>
+                    <br>
+                <h1 id="bk">IS OUR</h1> 
+                    <br>
+                <h1 id="ck">PLAYGROUND</h1>
+            </div>
+            <div id="text4">
+                <div id="inner-text1">
+                    <!-- First quote in Korean -->
+                    <p id="p3">"현실의 매트릭스 속에서 우리는 시간을 구부릴 수 없지만, <br> 상상력은 그 경계를 초월한다. <br> 과학이 설명하지 못하는 세계는 상상 속에서 이미 존재한다."</p>
+                    <!-- Explanation of the first quote in English with <br> tags -->
+                    <p id="p4">"In the matrix of reality, we cannot bend time, but imagination <br> transcends its boundaries. The worlds that science cannot <br> explain already exist within our imagination."</p>
+                </div>
+                <div id="inner-text2">
+                    <!-- Second quote in Korean -->
+                    <p id="p5">"시간은 직선이 아닌 무한한 가능성의 얽힌 실타래이다. <br> 과학이 풀어내는 것은 그 일부일 뿐, <br> 그 너머의 세계는 상상으로만 탐험할 수 있다."</p>
+                    <!-- Explanation of the second quote in English with <br> tags -->
+                    <p id="p6">"Time is not a straight line but an intertwined thread of infinite <br> possibilities. What science unravels is only a part, while the world <br> beyond can only be explored through imagination."</p>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+    <!-- locomotive scroll js -->
+     <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.js"></script>
+    <!-- we need GSAP scroll trigger -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js" integrity="sha512-onMTRKJBKz8M1TnqqDuGBlowlH0ohFzMXYRNebz+yOcc5TQr/zAKsthzhuv0hiyUKEiQEQXEynnXCvNTOk50dg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="script.js"></script>
+</body>
+</html>
